@@ -22,7 +22,8 @@ and the encrypted password hashes. /etc/shadow has more restrictive permissions 
 /etc/passwd file. On most Linux systems, only the root account has the ability to read the
 contents of the shadow file.  
 
-**Step 1: View the /etc/passwd file. Open a terminal and type the following command**
+**Step 1: View the /etc/passwd file. Open a terminal and type the following command**  
+*cat /etc/passwd*
 
 
 ![Add ArpSpoof]({{ page.root }}/fig/arpspoof/add-arpspoof.png)
