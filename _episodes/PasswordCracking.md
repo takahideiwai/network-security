@@ -144,6 +144,7 @@ stored together with hash code in the user account file.
 John the Ripper is one of the well-known fast password cracking tool that can crack passwords
 through a dictionary attack or through the use of brute force. It can be downloaded free at
 www.openwall.com/john/.   
+
 **Step 1: Install John the Ripper using the following command:**  
 
 *sudo apt-get install john*   
@@ -193,8 +194,43 @@ Warning: only loading hashes of type "des", but also saw type "crypt"
 Use the "--format=crypt" option to force loading hashes of that type instead   
 
 **It suggests us to specify the hash format.  
-We can use the following commands to specify the format option and run john again:**
+We can use the following commands to specify the format option and run john again:**  
 
+*sudo john --format=md5 --wordlist=/usr/share/john/password.lst hashfile1.txt*  
+
+**(if the password.lst can not be found, you can use the command locate password.lst to get
+the correct directory)**  
+
+**You can use the command to check the cracked passwords at this moment:**  
+
+**sudo john --show hashfile1.txt**  
+
+**Step 6: Use the following commands to specify the format option “crypt” and run john
+again:**  
+
+*sudo john --format=crypt hashfile1.txt*  
+
+**You can use the command to check the cracked passwords again:**  
+
+*sudo john --show hashfile1.txt*  
+
+What are the passwords cracked? Please take a screenshot of the result.  
+
+### Post-Task Questions
+
+Question 1 (4 points): What file in Linux store the names of the user accounts? What file stores the
+users’ password?  
+
+
+
+
+
+Question 2 (3 points): We observed that salts are stored together with hash codes, and are not kept as
+secrets. Why?  
+
+
+
+Question 3 (3 points): Is there any risk if the same salt is reused for several hashes on a user?
 
 
 
