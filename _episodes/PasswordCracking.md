@@ -66,7 +66,16 @@ cynb0BTtLgN.IlolE72npACz7Dr2p.:16983:0:99999:7:::**
 (usually a bad idea), and a ‘*’ entry (eg. :*:) indicates the account has been disabled. The “!” symbol
 (often called a bang) represents that fact the password has not been set. Usually password format is set to
 $id$salt$hash. The $id is the algorithm used On GNU/Linux as follows: $1$ is MD5, $2a$ is Blowfish,$2y$ is Blowfish, $5$ is SHA-256, $6$ is SHA-512  
-- 
+- Last change: the number of days (since January 1, 1970) since the password was last changed.
+- Min: the minimum number of days required between password changes. 0 indicates it may be changed at
+any time.  
+- Max: the number of days after which password must be changed. 99999 indicates user can keep his or her
+password unchanged for many, many years.  
+- Warn: the number of days to warn user of an expiring password (7 for a full week)
+- Inactive: the number of days after password expires that account is disabled  
+- Expire: the number of days since January 1, 1970 that an account has been disabled  
+- A reserved field for possible future use  
+
       
       
       
