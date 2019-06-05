@@ -90,19 +90,34 @@ password unchanged for many, many years.
 **Please take a scrrenshot of the result!**  
 
 **Step 7: Set alice’s password to apw123 using the following command:**
-sudo passwd alice  
+*sudo passwd alice*
 Enter new UNIX password: (type in apw123)  
 Retype new UNIX password: (type in apw123)  
 
 **Step 8: Set bob’s password to bpw123 using the command:**  
-sudo passwd bob  
+*sudo passwd bob*
 Enter new UNIX password: (type in bpw123)  
 Retype new UNIX password: (type in bpw123)  
 
 **Step 9: Examine the alterations to the shadow file by typing the following:**  
 *cat tail /etc/shadow*  
 
-**Please take a screenshot of the result.**  
+**Please take a screenshot of the result.**   
+
+## Cracking Hashes and Rainbow Table
+Although the hashing algorithms cannot be reversed, password hashes could be cracked. Hackers
+can generate hashes from a dictionary of strings that are commonly used as passwords. If hackers
+gain access to a database of hashed passwords, they can calculate the hash code for each string in
+the database and match it with the current hash code. If one in the database matches, the plaintext
+password of that hash is known. This is so-called brute force dictionary attack.  
+
+The brute force cracking described above is very time-consuming for calculating the hash code for
+every string in the database. The opposite way is to pre-calculate all the hash codes for the strings
+in the database and store the mapping of the hash codes to the strings. Then, hackers just need to
+look up a hash in the mapping table to find the password. However, this method requires too much
+space considering the large volume of strings that could be used as passwords. Considering the
+time-memory tradeoff, “rainbow table” is a better method that takes a place in between. It is a pre-
+commutated lookup table, but sacrifice hash cracking speed to make the lookup tables smaller.
 
 
        
