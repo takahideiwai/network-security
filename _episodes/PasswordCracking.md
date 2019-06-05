@@ -44,7 +44,11 @@ full name, phone number etc.
 **Please take a scrrenshot of the results!**  
 
 **Step 2: View the permission of the passwd file using the command:**  
-*ls -l /etc/passwd*
+*ls -l /etc/passwd*  
+
+| -                                                                     | rw-                                                          | r--                                                                              | r--                                                 |
+|-----------------------------------------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------|
+| ‘-’ indicates a file  'd’ indicates a directory  ‘l’ indicates a link | Read, write and execute permissions forthe owner of the file | Read, write and execute permissions for the members of the group owning the file | Read, write and execute permissions for other users |
 
 
       
