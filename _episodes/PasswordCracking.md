@@ -61,23 +61,51 @@ file, each field in the shadow file is also separated with ":" colon characters,
 **root:$6$OCtu.M/v$fpnhbjkpA4S29lKZ2TzRsl6ArWyvu9eIfWfC0H98t8OoLPokE8.d7q54
 cynb0BTtLgN.IlolE72npACz7Dr2p.:16983:0:99999:7:::**
 
-- Username: a direct match to the username in the /etc/passwd file.  
-- Password: encrypted password. A blank entry (eg. ::) indicates a password is not required to log in
+- **Username**: a direct match to the username in the /etc/passwd file.  
+- **Password**: encrypted password. A blank entry (eg. ::) indicates a password is not required to log in
 (usually a bad idea), and a ‘*’ entry (eg. :*:) indicates the account has been disabled. The “!” symbol
 (often called a bang) represents that fact the password has not been set. Usually password format is set to
-$id$salt$hash. The $id is the algorithm used On GNU/Linux as follows: $1$ is MD5, $2a$ is Blowfish,$2y$ is Blowfish, $5$ is SHA-256, $6$ is SHA-512  
-- Last change: the number of days (since January 1, 1970) since the password was last changed.
-- Min: the minimum number of days required between password changes. 0 indicates it may be changed at
+**$id$salt$hash**. The $id is the algorithm used On GNU/Linux as follows: **$1$** is MD5, **$2a$** is Blowfish,**$2y$** is Blowfish, **$5$** is SHA-256, **$6$** is SHA-512  
+- **Last change**: the number of days (since January 1, 1970) since the password was last changed.
+- **Min**: the minimum number of days required between password changes. 0 indicates it may be changed at
 any time.  
-- Max: the number of days after which password must be changed. 99999 indicates user can keep his or her
+- **Max**: the number of days after which password must be changed. 99999 indicates user can keep his or her
 password unchanged for many, many years.  
-- Warn: the number of days to warn user of an expiring password (7 for a full week)
-- Inactive: the number of days after password expires that account is disabled  
-- Expire: the number of days since January 1, 1970 that an account has been disabled  
-- A reserved field for possible future use  
+- **Warn**: the number of days to warn user of an expiring password (7 for a full week)
+- **Inactive**: the number of days after password expires that account is disabled  
+- **Expire**: the number of days since January 1, 1970 that an account has been disabled  
+- **A reserved field for possible future use**   
 
-      
-      
+**Please take a scrrenshot of the result!**  
+
+**Step4: Create a new user named alice in the command:**  
+*sudo useradd alice*  
+
+**Step 5: Create a new user named bob using the command:**  
+*sudo useradd bob*  
+
+**Step 6: Now, view the changes made to the passwd file:**  
+*cat /etc/passwd*  
+
+**Please take a scrrenshot of the result!**  
+
+**Step 7: Set alice’s password to apw123 using the following command:**
+sudo passwd alice  
+Enter new UNIX password: (type in apw123)  
+Retype new UNIX password: (type in apw123)  
+
+**Step 8: Set bob’s password to bpw123 using the command:**  
+sudo passwd bob  
+Enter new UNIX password: (type in bpw123)  
+Retype new UNIX password: (type in bpw123)  
+
+**Step 9: Examine the alterations to the shadow file by typing the following:**  
+*cat tail /etc/shadow*  
+
+**Please take a screenshot of the result.**  
+
+
+       
       
       
       
