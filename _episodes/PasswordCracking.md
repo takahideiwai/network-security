@@ -168,11 +168,33 @@ mdavis:$5$i3uY6Gfp$ywzsyCNRs7kbKbN7Ad0SnGR7P6bVmMQ8iJ7008mrGHC:156
 djameson:$6$iimf1wnL$T/0zG89BxF.qKzMyX7BZJCSye5x7wIQxox5dMMwWPdvpz
 FMOs2YkknqHdMbbdxyBN7NNNBnAh/d7YY2fRRV3k0:15652:0:99999:7:::  
 
-Open a terminal and type  
-
+**Open a terminal and type**
 *gedit*  
+**Paste the above information in the text editor and click the Save button in the menu to save it to Desktop as “hashfile1.txt”**  
 
-Paste the above information in the text editor and click the Save button in the menu to save it to Desktop as ***“hashfile1.txt”*
+**tep 4: Open a terminal, go to the desktop directory, and use john to crack the passwords**  
+
+*sudo john hashfile1.txt*  
+
+**Tip: After running john, you can check out the cracked password at any time using the
+command:**
+
+*sudo john --show hashfile1.txt*  
+
+**Step 5: Are there any remaining password to be cracked? You may get the following
+warnings:**  
+
+Warning: only loading hashes of type "des", but also saw type "md5"  
+
+Use the "--format=md5" option to force loading hashes of that type instead  
+
+Warning: only loading hashes of type "des", but also saw type "crypt"  
+
+Use the "--format=crypt" option to force loading hashes of that type instead   
+
+**It suggests us to specify the hash format.  
+We can use the following commands to specify the format option and run john again:**
+
 
 
 
