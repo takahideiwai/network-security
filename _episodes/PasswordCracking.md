@@ -58,8 +58,8 @@ full name, phone number etc.
 Each entry is the hashed password for each user (or user account) of the system. As with the passwd
 file, each field in the shadow file is also separated with ":" colon characters, and are as follows:  
 
-->**root:$6$OCtu.M/v$fpnhbjkpA4S29lKZ2TzRsl6ArWyvu9eIfWfC0H98t8OoLPokE8.d7q54
-cynb0BTtLgN.IlolE72npACz7Dr2p.:16983:0:99999:7:::**<-
+**root:$6$OCtu.M/v$fpnhbjkpA4S29lKZ2TzRsl6ArWyvu9eIfWfC0H98t8OoLPokE8.d7q54
+cynb0BTtLgN.IlolE72npACz7Dr2p.:16983:0:99999:7:::**
       
       
       
