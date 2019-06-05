@@ -145,14 +145,17 @@ John the Ripper is one of the well-known fast password cracking tool that can cr
 through a dictionary attack or through the use of brute force. It can be downloaded free at
 www.openwall.com/john/.   
 **Step 1: Install John the Ripper using the following command:**  
-*sudo apt-get install john*   +
 
-**Step 2: Type the following command to attempt to crack the passwords with john:**  
+*sudo apt-get install john*   
+
+**Step 2: Type the following command to attempt to crack the passwords with john:**   
+
 *sudo john /etc/shadow*  
 
 *Please take a screenshot of the results*  
 
 **Step 3: Can you crack the following passwords?**  
+
 emiller:3e05v.ztZ8LNE:15652:0:99999:7:::  
 
 tanderson:$1$AqW8SRi1$Dd0m3hFyOI276/IHinecr0:15652:0:99999:7:::  
@@ -166,7 +169,9 @@ djameson:$6$iimf1wnL$T/0zG89BxF.qKzMyX7BZJCSye5x7wIQxox5dMMwWPdvpz
 FMOs2YkknqHdMbbdxyBN7NNNBnAh/d7YY2fRRV3k0:15652:0:99999:7:::  
 
 Open a terminal and type  
+
 *gedit*  
+
 Paste the above information in the text editor and click the Save button in the menu to save it to Desktop as ***“hashfile1.txt”*
 
 
