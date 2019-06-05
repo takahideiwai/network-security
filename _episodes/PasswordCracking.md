@@ -39,7 +39,13 @@ administrative and system accounts/groups.
 - **User ID Info**: The comment field. It allows you to add extra information about the users such as user’s
 full name, phone number etc.  
 - **Home directory**: The absolute path to the directory the user will be in when they log in.  
-- **Command/shell**: The absolute path of a command or shell (/bin/bash).
+- **Command/shell**: The absolute path of a command or shell (/bin/bash).  
+
+    <html>
+    <body>  
+      <p><font color="red"> Please take a screenshot of the result.</font></p>
+      </body>
+      </html>
 
 
 
