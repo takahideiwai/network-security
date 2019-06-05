@@ -50,7 +50,15 @@ full name, phone number etc.
 |-----------------------------------------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------|
 | ‘-’ indicates a file  'd’ indicates a directory  ‘l’ indicates a link | Read, write and execute permissions forthe owner of the file | Read, write and execute permissions for the members of the group owning the file | Read, write and execute permissions for other users |
 
+**Please take a screenshot of the results**  
 
+**Step 3: View the /etc/shadow file using the command:**  
+*sudo cat /etc/shadow*  
+
+Each entry is the hashed password for each user (or user account) of the system. As with the passwd
+file, each field in the shadow file is also separated with ":" colon characters, and are as follows:  
+**root:$6$OCtu.M/v$fpnhbjkpA4S29lKZ2TzRsl6ArWyvu9eIfWfC0H98t8OoLPokE8.d7q54
+cynb0BTtLgN.IlolE72npACz7Dr2p.:16983:0:99999:7:::**
       
       
       
