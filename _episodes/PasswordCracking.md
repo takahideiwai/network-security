@@ -7,7 +7,12 @@ understand what password hash is and how password hash be cracked.
 ## Password Hashing
 A hash function turns any amount of data into a fixed-length “fingerprint” that cannot be reversed.  
 The fixed-length “fingerprint” is called a hash value or hash code. 
-The unique feature of hash functions is that any change in input data will result in a completely different hash code. Cryptographic hash functions are used to implement password hashing.There are multiplecryptographic hash functions, such as MD5, SHA-2.
+The unique feature of hash functions is that any change in input data will result in a completely different hash code. Cryptographic hash functions are used to implement password hashing.There are multiplecryptographic hash functions, such as MD5, SHA-2.  
+
+For example, the following are the MD5 hash codes of different strings.  
+MD5(“hello”) = “5D41402ABC4B2A76B9719D911017C592”  
+MD5(“hollo”) = “181D1F65FC3EDFC75945B24F22CD7E22”  
+MD5(“helloo”) = “B373870B9139BBADE83396A49B1AFC9A”  
 
 > ## Getting Started
 > 
