@@ -41,11 +41,35 @@ full name, phone number etc.
 - **Home directory**: The absolute path to the directory the user will be in when they log in.  
 - **Command/shell**: The absolute path of a command or shell (/bin/bash).  
 
-     <html>
-     <body>  
-      <p><font color="red"> Please take a screenshot of the result.</font></p>
-      </body>
-      </html>
+
+'''json
+"Please take a screenshot of the results"
+'''
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
 
 
 
