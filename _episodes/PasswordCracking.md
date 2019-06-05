@@ -14,7 +14,7 @@ MD5(“hello”) = “5D41402ABC4B2A76B9719D911017C592”
 MD5(“hollo”) = “181D1F65FC3EDFC75945B24F22CD7E22”  
 MD5(“helloo”) = “B373870B9139BBADE83396A49B1AFC9A”  
 
-## Task1: Exploring Linux Password Hashes
+### Task1: Exploring Linux Password Hashes
 
 The users’ information and passwords in Linux and UNIX operating system are stored in files.
 /etc/passwd stores user accounts, and the /etc/shadow stores the information about user accounts
@@ -117,7 +117,11 @@ in the database and store the mapping of the hash codes to the strings. Then, ha
 look up a hash in the mapping table to find the password. However, this method requires too much
 space considering the large volume of strings that could be used as passwords. Considering the
 time-memory tradeoff, “rainbow table” is a better method that takes a place in between. It is a pre-
-commutated lookup table, but sacrifice hash cracking speed to make the lookup tables smaller.
+commutated lookup table, but sacrifice hash cracking speed to make the lookup tables smaller.  
+
+### Task 2: Simple Password Cracking
+There are some online cracking tools. For example, CrackStation (https://crackstation.net/) is a
+online websites for cracking simple password hashes.
 
 
        
