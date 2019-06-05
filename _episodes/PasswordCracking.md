@@ -60,6 +60,13 @@ file, each field in the shadow file is also separated with ":" colon characters,
 
 **root:$6$OCtu.M/v$fpnhbjkpA4S29lKZ2TzRsl6ArWyvu9eIfWfC0H98t8OoLPokE8.d7q54
 cynb0BTtLgN.IlolE72npACz7Dr2p.:16983:0:99999:7:::**
+
+- Username: a direct match to the username in the /etc/passwd file.  
+- Password: encrypted password. A blank entry (eg. ::) indicates a password is not required to log in
+(usually a bad idea), and a ‘*’ entry (eg. :*:) indicates the account has been disabled. The “!” symbol
+(often called a bang) represents that fact the password has not been set. Usually password format is set to
+$id$salt$hash. The $id is the algorithm used On GNU/Linux as follows: $1$ is MD5, $2a$ is Blowfish,$2y$ is Blowfish, $5$ is SHA-256, $6$ is SHA-512  
+- 
       
       
       
