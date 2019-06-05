@@ -220,21 +220,21 @@ What are the passwords cracked? Please take a screenshot of the result.
 
 Question 1 (4 points): What file in Linux store the names of the user accounts? What file stores the
 users’ password?  
-
-
-
-
-
+  
+  
+  
+    
+     
 Question 2 (3 points): We observed that salts are stored together with hash codes, and are not kept as
 secrets. Why?  
-
-
-
+  
+  
+  
 Question 3 (3 points): Is there any risk if the same salt is reused for several hashes on a user?
-
-
-
-
+   
+  
+   
+   
 
 
 
