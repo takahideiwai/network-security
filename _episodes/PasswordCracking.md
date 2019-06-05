@@ -173,7 +173,7 @@ FMOs2YkknqHdMbbdxyBN7NNNBnAh/d7YY2fRRV3k0:15652:0:99999:7:::
 *gedit*  
 **Paste the above information in the text editor and click the Save button in the menu to save it to Desktop as “hashfile1.txt”**  
 
-**tep 4: Open a terminal, go to the desktop directory, and use john to crack the passwords**  
+**Step 4: Open a terminal, go to the desktop directory, and use john to crack the passwords**  
 
 *sudo john hashfile1.txt*  
 
