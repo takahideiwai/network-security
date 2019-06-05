@@ -4,17 +4,12 @@ hashes rather than plain text. If users’ passwords are stored in a database as
 hackers can get immediate access to them if they break into the system. In this lab, you will
 understand what password hash is and how password hash be cracked.
 
-### Demonstration
-
-The demonstration on CHEESEHub illustrates the ARP spoofing attack using three separate machines; a victim, server, and, hacker. 
-The *arpspoof* software provided by the *dsniff* library is used in the hacker to perform an ARP spoofing attack on the victim. 
-The hacker provides its own MAC address in response to the server’s IP address, causing all messages from the victim to the server 
-to be routed through the hacker. We verify the success of the attack in two ways. 
-
-1. We will inspect the ARP table on the victim and discover two separate MAC addresses for the server’s IP address, one each 
-from the server and hacker. 
-2. We look at the routing of packets from the victim to the server (for a simple *ping* command) to discover that packets are 
-delivered using two hops, first to the hacker and then to the server rather than a single hop directly to the server.
+## Password Hashing
+A hash function turns any amount of data into a fixed-length “fingerprint” that cannot be reversed.
+The fixed-length “fingerprint” is called a hash value or hash code. The unique feature of hash
+functions is that any change in input data will result in a completely different hash code.
+Cryptographic hash functions are used to implement password hashing. There are multiple
+cryptographic hash functions, such as MD5, SHA-2.
 
 > ## Getting Started
 > 
