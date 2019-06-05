@@ -14,14 +14,14 @@ MD5(“hello”) = “5D41402ABC4B2A76B9719D911017C592”
 MD5(“hollo”) = “181D1F65FC3EDFC75945B24F22CD7E22”  
 MD5(“helloo”) = “B373870B9139BBADE83396A49B1AFC9A”  
 
-> ## Getting Started
-> 
-> You will need to create an account on [CHEESEHub](https://www.hub.cheesehub.org) to work through this exercise.
-> Each container in this demonstration has a web interface and is accessible through your web browser, no other special software 
-> is needed.
-{: .callout} 
+## Task1: Exploring Linux Password Hashes
 
-We will start by first adding the ArpSpoof application:
+The users’ information and passwords in Linux and UNIX operating system are stored in files.
+/etc/passwd stores user accounts, and the /etc/shadow stores the information about user accounts
+and the encrypted password hashes. /etc/shadow has more restrictive permissions than the
+/etc/passwd file. On most Linux systems, only the root account has the ability to read the
+contents of the shadow file.
+
 
 ![Add ArpSpoof]({{ page.root }}/fig/arpspoof/add-arpspoof.png)
 
