@@ -41,10 +41,11 @@ full name, phone number etc.
 - **Home directory**: The absolute path to the directory the user will be in when they log in.  
 - **Command/shell**: The absolute path of a command or shell (/bin/bash).  
 
+**Please take a scrrenshot of the results!**  
 
-'''json
-"Please take a screenshot of the results"
-'''
+**Step 2: View the permission of the passwd file using the command:**  
+*ls -l /etc/passwd*
+
 
       
       
