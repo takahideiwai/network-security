@@ -25,6 +25,6 @@ contents of the shadow file.
 **Step 1: View the /etc/passwd file. Open a terminal and type the following command**  
 *cat /etc/passwd*  
 Each entry is the password information for each user (or user account) of the system. For example:  
-| root: | X: | 0: | 0: | root: |/root: | /bin/bash |  
-|-------|----|----|----|-------|-------|-----------|  
-| UserName|password|User ID| UserID info| Home directory| Command/shell|
+| root:    | x:       | 0:      | 0:       | root:         | /root:         | /bin/bash     |
+|----------|----------|---------|----------|---------------|----------------|---------------|
+| Username | password | User ID | Group ID | User ID infor | Home Directory | Command/shell |
