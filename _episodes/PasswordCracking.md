@@ -140,6 +140,68 @@ To defeat rainbow tables, “salt” is invented to randomize the hash for each 
 when the same password is hashed twice, two different hash codes will be generated. Salt is usually
 stored together with hash code in the user account file.  
 
+### Task 3: Using John the Ripper for Password Cracking  
+John the Ripper is one of the well-known fast password cracking tool that can crack passwords
+through a dictionary attack or through the use of brute force. It can be downloaded free at
+www.openwall.com/john/.   
+**Step 1: Install John the Ripper using the following command:**  
+*sudo apt-get install john*   +
+
+**Step 2: Type the following command to attempt to crack the passwords with john:**  
+*sudo john /etc/shadow*  
+
+*Please take a screenshot of the results*  
+
+**Step 3: Can you crack the following passwords?**  
+emiller:3e05v.ztZ8LNE:15652:0:99999:7:::  
+
+tanderson:$1$AqW8SRi1$Dd0m3hFyOI276/IHinecr0:15652:0:99999:7:::  
+
+awilliams:mQK2Y4hWq0SvY:15652:0:99999:7:::  
+
+mdavis:$5$i3uY6Gfp$ywzsyCNRs7kbKbN7Ad0SnGR7P6bVmMQ8iJ7008mrGHC:156
+52:0:99999:7:::  
+
+djameson:$6$iimf1wnL$T/0zG89BxF.qKzMyX7BZJCSye5x7wIQxox5dMMwWPdvpz
+FMOs2YkknqHdMbbdxyBN7NNNBnAh/d7YY2fRRV3k0:15652:0:99999:7:::  
+
+Open a terminal and type  
+*gedit*  
+Paste the above information in the text editor and click the Save button in the menu to save it to Desktop as ***“hashfile1.txt”*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       
