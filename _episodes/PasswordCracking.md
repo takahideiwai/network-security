@@ -123,8 +123,25 @@ commutated lookup table, but sacrifice hash cracking speed to make the lookup ta
 There are some online cracking tools. For example, CrackStation (https://crackstation.net/) is a
 online websites for cracking simple password hashes.
 
+Please use the CrackStation to crack the following password hashes:
+**Hash 1: 6384E2B2184BCBF58ECCF10CA7A6563C**
+What is the password? What hash algorithm is used?    
 
-       
+**Hash 2:4E40E8FFE0EE32FA53E139147ED559229A5930F89C2204706FC174BEB36210B3**  
+What is the password? What hash algorithm is used?   
+
+**Hash 3: 5994F091C5CBC05EE2DF38DA2C54EA5BE663D54E**  
+What is the password? What hash algorithm is used?  
+
+### Salt  
+
+Rainbow tables reply on the assumption that each password is hashed in the exact the same way.
+To defeat rainbow tables, “salt” is invented to randomize the hash for each password. Using salt,
+when the same password is hashed twice, two different hash codes will be generated. Salt is usually
+stored together with hash code in the user account file.  
+
+
+
       
       
       
