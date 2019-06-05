@@ -1,34 +1,8 @@
----
-title: "ARP Poisoning Attack"
-teaching: 10
-exercises: 30
-questions:
-- "What is an ARP Poisoning attack?"
-- "Why is ARP vulnerable to such attacks?"
-- "What can you do once you have successfully performed an ARP poisoning attack?"
-objectives:
-- "Follow instructions to successfully demonstrate an ARP poisoning attack."
-keypoints:
-- "Hacker needs to be on the same local network as the victim and server."
-- "ARP Poisoning results in spurious entries in a victim's ARP table."
-- "The affected ARP table causes the victim to transmit messages to the hacker inspite of using the server's IP address."
-- "Unless the victim inspects the route to the server, this attack cannot be discovered."
----
-
-## ARP Poisoning Attack
-
-The ARP Spoofing attack is a typical *man-in-the-middle* attack by which a hacker who has gained access to 
-communication between two parties, can subsequently monitor and relay modified communication between these 
-parties without their knowledge.
-
-The ARP (Address Resolution Protocol) protocol is used to discover the hardware MAC address given an IP address. 
-An ARP message is broadcast to the local network, with the IP in question and the corresponding machine responds with 
-its MAC address. The hardware MAC address is typically needed to route packets to the right machine on a local network. 
-The mapping between IP and MAC addresses that have been discovered via ARP, are stored in an ARP table on each machine. 
-A hacker on the same LAN as two communicating machines can send an ARP message providing their own MAC address in response 
-to the IP address of either of the two machines. Thus, in effect, the hacker *poisons* the ARP table of these machines 
-by injecting an erroneous IP address - MAC address mapping. As a result, messages intended for these machines will be 
-routed to the hacker, allowing them to gain access to potentially sensitive data.
+## Password Hashing and Cracking
+Password is an important user authentication mechanism. Passwords are stored in the database as
+hashes rather than plain text. If users’ passwords are stored in a database as plain text, malicious
+hackers can get immediate access to them if they break into the system. In this lab, you will
+understand what password hash is and how password hash be cracked.
 
 ### Demonstration
 
