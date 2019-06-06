@@ -123,7 +123,7 @@ commutated lookup table, but sacrifice hash cracking speed to make the lookup ta
 There are some online cracking tools. For example, CrackStation (https://crackstation.net/) is a
 online websites for cracking simple password hashes.
 
-Please use the CrackStation to crack the following password hashes:
+Please use the CrackStation to crack the following password hashes:  
 **Hash 1: 6384E2B2184BCBF58ECCF10CA7A6563C**
 What is the password? What hash algorithm is used?    
 
@@ -232,67 +232,3 @@ secrets. Why?
   
 Question 3 (3 points): Is there any risk if the same salt is reused for several hashes on a user?
    
-  
-   
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-
-
-
-
-
-
